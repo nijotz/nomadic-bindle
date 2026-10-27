@@ -1,1 +1,2 @@
-pkg: rust rust-analyzer
+# after homebrew/path so ~/.cargo/bin is prepended ahead of them
+after: homebrew path

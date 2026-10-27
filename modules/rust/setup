@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Install rustup via the official installer; PATH is handled by this module's bash/fish
+if [[ ! -x "$HOME/.cargo/bin/rustup" ]]; then
+  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --no-modify-path --component rust-analyzer
+fi
