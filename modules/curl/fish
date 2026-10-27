@@ -1,0 +1,3 @@
+# Homebrew curl is keg-only; prefer it over the macOS system curl
+set PATH (brew --prefix)/opt/curl/bin $PATH
+set MANPATH (brew --prefix)/opt/curl/share/man:$MANPATH

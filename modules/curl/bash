@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+brew_prefix=$(brew --prefix)
+
+cat <<EOF
+# Homebrew curl is keg-only; prefer it over the macOS system curl
+export PATH=$brew_prefix/opt/curl/bin:\$PATH
+export MANPATH=$brew_prefix/opt/curl/share/man:\$MANPATH
+EOF
